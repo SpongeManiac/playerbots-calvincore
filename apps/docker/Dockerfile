@@ -80,6 +80,9 @@ ARG CACHEBUST=1
 
 WORKDIR /azerothcore/build
 
+# Get modules from modules.txt before build
+RUN sh /azerothcore/modules/get-modules.sh
+
 RUN --mount=type=cache,target=/ccache,sharing=locked \
     # This may seem silly (and it is), but AzerothCore wants the git repo at
     # build time. The git repo is _huge_ and it's not something that really
