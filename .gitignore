@@ -16,6 +16,10 @@
 !/var/build/.gitkeep
 !/var/ccache/.gitkeep
 /env/dist/*
+!/env/dist/etc
+!/env/dist/etc/*
+!/env/dist/etc/modules
+!/env/dist/etc/modules/*
 !/env/dist/.gitkeep
 /env/user/*
 /.env*
