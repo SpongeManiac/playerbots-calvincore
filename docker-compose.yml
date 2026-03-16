@@ -23,6 +23,17 @@ services:
       interval: 5s
       timeout: 10s
       retries: 40
+    depends_on:
+        ac-modules:
+            condition: service_completed_successfully
+
+  ac-modules:
+    container_name: ac-modules
+    image: alpine/git:latest
+    user: "${DOCKER_USER_ID:-1000}:${DOCKER_GROUP_ID:-1000}"
+    volumes:
+      - ./:/azerothcore
+    entrypoint: ["/azerothcore/modules/get-modules.sh"]
 
   ac-worldserver:
     container_name: ac-worldserver
@@ -50,9 +61,15 @@ services:
       - ${DOCKER_VOL_LOGS:-./env/dist/logs}:/azerothcore/env/dist/logs:delegated
       # client data
       - ${DOCKER_VOL_DATA:-ac-client-data}:/azerothcore/env/dist/data/:ro
+      # modules
+      - ${DOCKER_AC_MODULES:-./modules}:/azerothcore/modules
+      # ALE scripts
+      - ${DOCKER_AC_SCRIPTS:-./lua_scripts}:/azerothcore/lua_scripts
     depends_on:
       ac-database:
         condition: service_healthy
+      ac-authserver:
+        condition: service_started
 
   ac-authserver:
     container_name: ac-authserver
