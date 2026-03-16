@@ -8,6 +8,7 @@
 !/modules/*.md
 !/modules/*.sh
 !/modules/CMakeLists.txt
+!/modules/modules.txt
 !/modules/*.h
 !/modules/*.cmake
 /build*/

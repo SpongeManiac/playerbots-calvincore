@@ -1,0 +1,10 @@
+https://github.com/azerothcore/mod-account-achievements.git
+https://github.com/azerothcore/mod-ah-bot.git
+https://github.com/azerothcore/mod-ale.git:ecb3d102ac056c8ee92c3778158b475e16650ce2
+https://github.com/abracadaniel22/mod-fly-anywhere.git
+https://github.com/azerothcore/mod-guildhouse.git
+https://github.com/azerothcore/mod-low-level-rbg.git
+https://github.com/DustinHendrickson/mod-ollama-chat.git
+https://github.com/DustinHendrickson/mod-player-bot-guildhouse.git
+https://github.com/mod-playerbots/mod-playerbots.git
+https://github.com/azerothcore/mod-solo-lfg.git
