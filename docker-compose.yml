@@ -32,8 +32,8 @@ services:
     image: alpine/git:latest
     user: "${DOCKER_USER_ID:-1000}:${DOCKER_GROUP_ID:-1000}"
     volumes:
-      - ./:/azerothcore
-    entrypoint: ["/azerothcore/modules/get-modules.sh"]
+      - ./modules:/modules
+    entrypoint: ["/modules/get-modules.sh"]
 
   ac-worldserver:
     container_name: ac-worldserver
