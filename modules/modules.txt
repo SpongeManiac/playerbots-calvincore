@@ -6,5 +6,5 @@ https://github.com/azerothcore/mod-guildhouse.git
 https://github.com/azerothcore/mod-low-level-rbg.git
 https://github.com/DustinHendrickson/mod-ollama-chat.git
 https://github.com/DustinHendrickson/mod-player-bot-guildhouse.git
-https://github.com/mod-playerbots/mod-playerbots.git
+https://github.com/mod-playerbots/mod-playerbots.git:f00fe15ff120b373edce0cb5d5a7d71d9963cfb5
 https://github.com/azerothcore/mod-solo-lfg.git
