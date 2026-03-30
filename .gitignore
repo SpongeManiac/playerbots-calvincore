@@ -57,6 +57,7 @@ CMakeLists.txt.user
 *.BACKUP.*
 *.BASE.*
 *.LOCAL.*
+*.log
 
 #
 # IDE & other software
